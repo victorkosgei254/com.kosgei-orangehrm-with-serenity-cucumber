@@ -1,6 +1,9 @@
+@issue:KEY-3
 Feature: Mpesa payment
     Some business activities are considered more risk-prone than others,
     and certain customers and entities may pose specific risks.
+
+
 
     Scenario Outline: The business activity risk factor for an industry
 
@@ -19,6 +22,8 @@ Feature: Mpesa payment
             | Real Estate Broker       | 6           |
             | Software Development     | 3           |
 
+
+
     Scenario Outline: The business activity risk factor for an established business
         Established businessess have been in activity for 2 years or more
 
@@ -31,7 +36,7 @@ Feature: Mpesa payment
             | 7 or above  | Casino               | High        |
             | 5 to 7      | Jewellery Store      | Medium      |
             | Under 5     | Software Development | Low         |
-
+    @issue:KEY-2
     Scenario: My example
 
         Given  I have copied exactly the example shown
